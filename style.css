@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+body {
+  font-family: "PT Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #2d3047;
+}
+button {
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+#timer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #419d78;
+  color: #efd0ca;
+  font-size: 80px;
+  font-weight: 400;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.btn-group {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+.btn-group button {
+  font-size: 30px;
+  background-color: #419d78; /* Green background */
+  color: #efd0ca; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  transition: 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.btn-group #start {
+  border-right: 20px solid #2d3047;
+}
+.btn-group #reset {
+  background-color: #009686;
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #388667;
+}
+
+#heading {
+  color: #efd0ca;
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+}
